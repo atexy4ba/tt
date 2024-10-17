@@ -1,0 +1,107 @@
+body {
+  background-color: #65b88e;
+  background-image: url('Plan\ de\ travail\ 11.png');
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Athletic Pro' , sans-serif;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.timer, .errors, .accuracy, .cpm, .wpm {
+  background-color: #FDCD00;
+  height: 120px; /* Hauteur agrandie */
+  width: 100px;  /* Largeur agrandie */
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: black 5px 8px 5px;
+  display: flex;
+  flex-direction: column; /* Empiler les éléments verticalement */
+  justify-content: center; /* Centrer les éléments dans la carte */
+  align-items: center;
+  text-align: center; /* Centrer le texte */
+}
+.cpm, .wpm  {
+  display: flex;
+  text-align: center;
+  
+}
+
+.header_text {
+  font-size: 1.2rem; /* Taille plus grande pour les mots */
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacement en bas du mot */
+}
+
+.curr_time, .curr_errors, .curr_accuracy, .curr_cpm, .curr_wpm {
+  font-size: 2rem; /* Taille pour le score */
+  font-weight: bold;
+  margin: 0; /* Supprimer les marges inutiles */
+}
+
+.quote {
+  
+  font-size: 3.1rem;
+  margin: 10px;
+  padding: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input_area {
+  background-color: #0060AA;
+  height: 120px; /* Augmentation de la hauteur */
+  width: 1000px; /* Augmentation de la largeur */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  color: white;
+  
+  box-shadow: black 5px 8px 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: darkgreen;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #0db1ab;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
